@@ -1638,17 +1638,6 @@ Wire Wire Line
 Connection ~ 2250 4850
 Wire Wire Line
 	2150 4350 2550 4350
-$Comp
-L KLALIB_Analog_Switch:SN74LVC1G3157 U2
-U 1 1 5DE7E5C0
-P 2250 5350
-F 0 "U2" H 2325 4781 50  0000 L CNN
-F 1 "SN74LVC1G3157" H 2325 4690 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 2250 5350 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/sn74lvc1g3157.pdf" H 2250 5350 50  0001 C CNN
-	1    2250 5350
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	1600 5950 1600 5750
 Wire Wire Line
@@ -1671,13 +1660,13 @@ $EndComp
 Connection ~ 2250 3750
 Connection ~ 1350 2300
 $Comp
-L Connector:USB_B_Micro J2
+L Connector:USB_B_Mini J2
 U 1 1 5DD823C3
 P 1050 2500
 F 0 "J2" H 1107 2967 50  0000 C CNN
-F 1 "USB_B_Micro" H 957 2876 50  0000 C CNN
-F 2 "Connector_USB:USB_Micro-B_Molex_47346-0001" H 1200 2450 50  0001 C CNN
-F 3 "https://www.tme.eu/cz/details/mx-47346-0001/konektory-usb-a-ieee1394/molex/47346-0001/" H 1200 2450 50  0001 C CNN
+F 1 "USB_B_Mini" H 957 2876 50  0000 C CNN
+F 2 "Connector_USB:USB_Mini-B_Lumberg_2486_01_Horizontal" H 1200 2450 50  0001 C CNN
+F 3 "https://www.tme.eu/cz/details/2486-01/konektory-usb-a-ieee1394/lumberg/2486-01/" H 1200 2450 50  0001 C CNN
 	1    1050 2500
 	1    0    0    -1  
 $EndComp
@@ -1727,17 +1716,6 @@ Text Label 5900 2050 2    50   ~ 0
 DOUBLER_EN
 Text Label 5900 1550 2    50   ~ 0
 PLO_LE
-$Comp
-L Connector_Generic:Conn_02x02_Odd_Even J1&1
-U 1 1 5DF2A329
-P 5450 2250
-F 0 "J1&1" H 4775 2267 50  0000 C CNN
-F 1 "Selector" H 4775 2176 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Horizontal" H 5450 2250 50  0001 C CNN
-F 3 "~" H 5450 2250 50  0001 C CNN
-	1    5450 2250
-	-1   0    0    1   
-$EndComp
 $Comp
 L power:GND #PWR035
 U 1 1 5DF0B43F
@@ -2590,7 +2568,7 @@ F 3 "https://www.tme.eu/cz/details/blm18pg471sn1d/koralky-s-feritem/murata/" H 4
 $EndComp
 Connection ~ 4150 4975
 Wire Wire Line
-	4150 4975 3550 4975
+	4150 4975 3875 4975
 Connection ~ 3250 4500
 $Comp
 L Device:R R31
@@ -2648,7 +2626,7 @@ Wire Wire Line
 	4700 4450 4700 5000
 Connection ~ 4900 4450
 Wire Wire Line
-	4900 4450 5700 4450
+	4900 4450 5375 4450
 $Comp
 L KLALIB_Power:VDD #PWR029
 U 1 1 5DD1ADE0
@@ -2692,8 +2670,8 @@ $Comp
 L Device:R R33
 U 1 1 5E0E7FD6
 P 4900 4600
-F 0 "R33" H 4970 4554 50  0000 L CNN
-F 1 "0R" H 4970 4645 50  0000 L CNN
+F 0 "R33" H 4830 4554 50  0000 R CNN
+F 1 "0R" H 4830 4645 50  0000 R CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4830 4600 50  0001 C CNN
 F 3 "~" H 4900 4600 50  0001 C CNN
 	1    4900 4600
@@ -2761,7 +2739,7 @@ F 3 "~" H 7050 5700 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	3650 4500 4300 4500
+	3650 4500 3800 4500
 Wire Wire Line
 	3450 4500 3650 4500
 Connection ~ 3650 4500
@@ -2984,4 +2962,156 @@ Wire Wire Line
 	6550 950  6850 950 
 Wire Wire Line
 	5150 2650 5900 2650
+$Comp
+L KLALIB_Analog_Switch:SN74LVC1G3157 U2
+U 1 1 5DE7E5C0
+P 2250 5350
+F 0 "U2" H 2325 4781 50  0000 L CNN
+F 1 "SN74LVC1G3157" H 2325 4690 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 2250 5350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74lvc1g3157.pdf" H 2250 5350 50  0001 C CNN
+	1    2250 5350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5E34D57B
+P 700 7100
+F 0 "H1" H 800 7103 50  0000 L CNN
+F 1 "MountingHole_Pad" H 800 7058 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 700 7100 50  0001 C CNN
+F 3 "~" H 700 7100 50  0001 C CNN
+	1    700  7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5E34E7EF
+P 700 7200
+F 0 "#PWR0101" H 700 6950 50  0001 C CNN
+F 1 "GND" H 705 7027 50  0000 C CNN
+F 2 "" H 700 7200 50  0001 C CNN
+F 3 "" H 700 7200 50  0001 C CNN
+	1    700  7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5E35C407
+P 1100 7100
+F 0 "H2" H 1200 7103 50  0000 L CNN
+F 1 "MountingHole_Pad" H 1200 7058 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 1100 7100 50  0001 C CNN
+F 3 "~" H 1100 7100 50  0001 C CNN
+	1    1100 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5E35C414
+P 1100 7200
+F 0 "#PWR0102" H 1100 6950 50  0001 C CNN
+F 1 "GND" H 1105 7027 50  0000 C CNN
+F 2 "" H 1100 7200 50  0001 C CNN
+F 3 "" H 1100 7200 50  0001 C CNN
+	1    1100 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5E36298D
+P 1500 7200
+F 0 "#PWR0107" H 1500 6950 50  0001 C CNN
+F 1 "GND" H 1505 7027 50  0000 C CNN
+F 2 "" H 1500 7200 50  0001 C CNN
+F 3 "" H 1500 7200 50  0001 C CNN
+	1    1500 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5E36299A
+P 1500 7100
+F 0 "H3" H 1600 7103 50  0000 L CNN
+F 1 "MountingHole_Pad" H 1600 7058 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 1500 7100 50  0001 C CNN
+F 3 "~" H 1500 7100 50  0001 C CNN
+	1    1500 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5E3660BC
+P 1900 7100
+F 0 "H4" H 2000 7103 50  0000 L CNN
+F 1 "MountingHole_Pad" H 2000 7058 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 1900 7100 50  0001 C CNN
+F 3 "~" H 1900 7100 50  0001 C CNN
+	1    1900 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5E3660C9
+P 1900 7200
+F 0 "#PWR0108" H 1900 6950 50  0001 C CNN
+F 1 "GND" H 1905 7027 50  0000 C CNN
+F 2 "" H 1900 7200 50  0001 C CNN
+F 3 "" H 1900 7200 50  0001 C CNN
+	1    1900 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x02_Odd_Even J7
+U 1 1 5DF2A329
+P 5450 2250
+F 0 "J7" H 4775 2267 50  0000 C CNN
+F 1 "Selector" H 4775 2176 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Horizontal" H 5450 2250 50  0001 C CNN
+F 3 "~" H 5450 2250 50  0001 C CNN
+	1    5450 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5E52522F
+P 3875 4975
+F 0 "#FLG0103" H 3875 5050 50  0001 C CNN
+F 1 "PWR_FLAG" H 3875 5148 50  0001 C CNN
+F 2 "" H 3875 4975 50  0001 C CNN
+F 3 "~" H 3875 4975 50  0001 C CNN
+	1    3875 4975
+	-1   0    0    1   
+$EndComp
+Connection ~ 3875 4975
+Wire Wire Line
+	3875 4975 3550 4975
+$Comp
+L power:PWR_FLAG #FLG0104
+U 1 1 5E53AF50
+P 3800 4500
+F 0 "#FLG0104" H 3800 4575 50  0001 C CNN
+F 1 "PWR_FLAG" H 3800 4673 50  0001 C CNN
+F 2 "" H 3800 4500 50  0001 C CNN
+F 3 "~" H 3800 4500 50  0001 C CNN
+	1    3800 4500
+	-1   0    0    1   
+$EndComp
+Connection ~ 3800 4500
+Wire Wire Line
+	3800 4500 4300 4500
+$Comp
+L power:PWR_FLAG #FLG0105
+U 1 1 5E550BD2
+P 5375 4450
+F 0 "#FLG0105" H 5375 4525 50  0001 C CNN
+F 1 "PWR_FLAG" H 5375 4623 50  0001 C CNN
+F 2 "" H 5375 4450 50  0001 C CNN
+F 3 "~" H 5375 4450 50  0001 C CNN
+	1    5375 4450
+	-1   0    0    1   
+$EndComp
+Connection ~ 5375 4450
+Wire Wire Line
+	5375 4450 5700 4450
 $EndSCHEMATC
