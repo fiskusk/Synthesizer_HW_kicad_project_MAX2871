@@ -26,5 +26,9 @@ _autosave-*
 *.xml
 *.csv
 
+# Other project files/documentations/gerber
+documentation/
+gerber/
+
 # Windows balast
 desktop.ini
