@@ -2087,7 +2087,7 @@ U 1 1 5E8724F0
 P 9950 2150
 F 0 "U7" H 9950 2517 50  0000 C CNN
 F 1 "LT3042xMSE" H 9950 2426 50  0000 C CNN
-F 2 "Package_DFN_QFN:DFN-10-1EP_3x3mm_P0.5mm_EP1.65x2.38mm_ThermalVias" H 9950 2475 50  0001 C CNN
+F 2 "KLALIB_Housing:DFN-10-1EP_3x3mm_P0.5mm_EP1.65x2.38mm_ThermalVias" H 9950 2475 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/3042fb.pdf" H 9950 2150 50  0001 C CNN
 	1    9950 2150
 	1    0    0    -1  
@@ -2886,8 +2886,8 @@ F 3 "" H 6850 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3700 1550 3850 1550
-Text Label 3700 1550 0    50   ~ 0
+	3400 1550 3850 1550
+Text Label 3400 1550 0    50   ~ 0
 ~RST
 Text Label 6550 1150 0    50   ~ 0
 ~RST

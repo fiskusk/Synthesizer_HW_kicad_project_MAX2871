@@ -1,4 +1,4 @@
-update=29.11.2019 16:25:09
+update=4.12.2019 17:08:14
 version=1
 last_client=kicad
 [general]
@@ -81,9 +81,9 @@ dPairWidth1=0.2
 dPairGap1=0.25
 dPairViaGap1=0.25
 SilkLineWidth=0.12
-SilkTextSizeV=1
-SilkTextSizeH=1
-SilkTextSizeThickness=0.15
+SilkTextSizeV=0.7
+SilkTextSizeH=0.7
+SilkTextSizeThickness=0.09999999999999999
 SilkTextItalic=0
 SilkTextUpright=1
 CopperLineWidth=0.2
@@ -100,7 +100,7 @@ OthersTextSizeH=1
 OthersTextSizeThickness=0.15
 OthersTextItalic=0
 OthersTextUpright=1
-DimensionUnits=2
+DimensionUnits=0
 DimensionPrecision=1
 SolderMaskClearance=0.05
 SolderMaskMinWidth=0.08
