@@ -853,8 +853,8 @@ $Comp
 L Oscillator:ABLNO X1
 U 1 1 5DF8EA16
 P 950 5950
-F 0 "X1" H 1044 5696 50  0000 L CNN
-F 1 "TXETALSANF-10MHz" H 1044 5605 50  0000 L CNN
+F 0 "X1" H 507 5996 50  0000 R CNN
+F 1 "TXETALSANF-10MHz" H 507 5905 50  0000 R CNN
 F 2 "KLALIB_Crystal:Crystal_SMD_4Pin_3.2x2.5mm" H 950 5600 50  0001 C CNN
 F 3 "https://www.digikey.com/product-detail/en/taitien/TXETALSANF-10.000000/1664-1262-1-ND/6126575" H 750 6050 50  0001 C CNN
 	1    950  5950
@@ -1574,20 +1574,12 @@ Wire Wire Line
 Wire Wire Line
 	950  4500 2650 4500
 Wire Wire Line
-	2650 4500 2650 5600
-Wire Wire Line
-	2650 5600 2600 5600
-Wire Wire Line
 	1700 4350 1300 4350
 Connection ~ 1700 4350
 Text Label 1300 4350 0    50   ~ 0
 INT_REF
 Wire Wire Line
 	2700 6200 2700 5350
-Wire Wire Line
-	2700 5350 2600 5350
-Wire Wire Line
-	1600 5450 1850 5450
 Wire Wire Line
 	1250 3750 1200 3750
 Wire Wire Line
@@ -1622,8 +1614,6 @@ Wire Wire Line
 Wire Wire Line
 	2250 3750 2250 4850
 Wire Wire Line
-	2250 4850 2250 4900
-Wire Wire Line
 	2250 4850 2150 4850
 Connection ~ 2250 4850
 Wire Wire Line
@@ -1632,8 +1622,6 @@ Wire Wire Line
 	1600 5950 1600 5750
 Wire Wire Line
 	1350 5950 1600 5950
-Wire Wire Line
-	1750 5250 1850 5250
 Wire Wire Line
 	1450 5250 1400 5250
 $Comp
@@ -2086,7 +2074,7 @@ L Regulator_Linear:LT3042xMSE U7
 U 1 1 5E8724F0
 P 9950 2150
 F 0 "U7" H 9950 2517 50  0000 C CNN
-F 1 "LT3042xMSE" H 9950 2426 50  0000 C CNN
+F 1 "LT3042EDD" H 9950 2426 50  0000 C CNN
 F 2 "KLALIB_Housing:DFN-10-1EP_3x3mm_P0.5mm_EP1.65x2.38mm_ThermalVias" H 9950 2475 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/3042fb.pdf" H 9950 2150 50  0001 C CNN
 	1    9950 2150
@@ -2678,8 +2666,8 @@ $Comp
 L Connector_Generic:Conn_01x02 J1
 U 1 1 5DD15B9B
 P 700 900
-F 0 "J1" H 530 600 50  0000 L CNN
-F 1 "+5V_DC" H 530 691 50  0000 L CNN
+F 0 "J1" H 610 1117 50  0000 L CNN
+F 1 "+5V_DC" H 610 1026 50  0000 L CNN
 F 2 "Connector_Molex:Molex_SPOX_5268-02A_1x02_P2.50mm_Horizontal" H 700 900 50  0001 C CNN
 F 3 "https://www.tme.eu/cz/details/mx-5268-02a/signalove-konektory-raster-2-50mm/molex/22-05-7025/" H 700 900 50  0001 C CNN
 	1    700  900 
@@ -2732,7 +2720,7 @@ L MCU_ST_STM32F0:STM32F042F6Px U3
 U 1 1 5DD130AB
 P 4550 2050
 F 0 "U3" H 4700 1286 50  0000 C CNN
-F 1 "STM32F042F6Px" H 4800 1195 50  0000 C CNN
+F 1 "STM32F042F6P6" H 4800 1195 50  0000 C CNN
 F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 4050 1350 50  0001 R CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00105814.pdf" H 4550 2050 50  0001 C CNN
 	1    4550 2050
@@ -2916,17 +2904,6 @@ Wire Wire Line
 	6550 950  6850 950 
 Wire Wire Line
 	5150 2650 5900 2650
-$Comp
-L KLALIB_Analog_Switch:SN74LVC1G3157 U2
-U 1 1 5DE7E5C0
-P 2250 5350
-F 0 "U2" H 2325 4781 50  0000 L CNN
-F 1 "SN74LVC1G3157" H 2325 4690 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 2250 5350 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/sn74lvc1g3157.pdf" H 2250 5350 50  0001 C CNN
-	1    2250 5350
-	-1   0    0    -1  
-$EndComp
 $Comp
 L Mechanical:MountingHole_Pad H1
 U 1 1 5E34D57B
@@ -3115,5 +3092,28 @@ F 3 "~" H 2800 3700 50  0001 C CNN
 F 4 "EXT_REF_ACTIVE" V 2702 3583 50  0000 R CNN "Součástka"
 	1    2800 3700
 	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2650 4500 2650 5600
+Wire Wire Line
+	1750 5250 1850 5250
+Wire Wire Line
+	2250 4850 2250 4900
+Wire Wire Line
+	1600 5450 1850 5450
+Wire Wire Line
+	2650 5600 2600 5600
+Wire Wire Line
+	2700 5350 2600 5350
+$Comp
+L KLALIB_Analog_Switch:SN74LVC1G3157 U2
+U 1 1 5DE7E5C0
+P 2250 5350
+F 0 "U2" H 2325 4781 50  0000 L CNN
+F 1 "SN74LVC1G3157" H 2325 4690 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 2250 5350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74lvc1g3157.pdf" H 2250 5350 50  0001 C CNN
+	1    2250 5350
+	-1   0    0    -1  
 $EndComp
 $EndSCHEMATC
